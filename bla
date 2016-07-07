@@ -44,3 +44,94 @@ Note that in most cases, img elements are self-closing.
 Try it with this image:
 
 https://bit.ly/fcc-relaxing-cat
+
+
+<img src="https://bit.ly/fcc-relaxing-cat" class="smaller-image"> OR <img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat">
+
+
+
+Add Borders Around your Elements:
+
+CSS borders have properties like style, color and width
+
+For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:
+
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+Create a class called thick-green-border that puts a 10-pixel-wide green border with a style of solid around an HTML element, and apply that class to your cat photo.
+
+Remember that you can apply multiple classes to an element by separating each class with a space within its class attribute. For example:
+
+<img class="class1 class2">
+
+<img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat">
+
+Link to External Pages with Anchor Elements
+a elements, also known as anchor elements, are used to link to content outside of the current page.
+
+Here's a diagram of an a element. In this case, the a element is used in the middle of a paragraph element, which means the link will appear in the middle of a sentence.
+
+a diagram of how anchor tags are composed with the same text as on the following line
+
+Here's an example:
+
+<p>Here's a <a href="http://freecodecamp.com"> link to Free Code Camp</a> for you to follow.</p>
+
+Create an a element that links to http://freecatphotoapp.com and has "cat photos" as its anchor text.
+
+Nest an Anchor Element within a Paragraph
+Again, here's a diagram of an a element for your reference:
+
+a diagram of how anchor tags are composed with the same text as on the following line
+
+Here's an example:
+
+<p>Here's a <a href="https://freecodecamp.com"> link to Free Code Camp</a> for you to follow.</p>
+
+Nesting just means putting one element inside of another element.
+
+Now nest your existing a element within a new p element (just after the existing h2 element) so that the surrounding paragraph says "View more cat photos", but where only "cat photos" is a link, and the rest of the text is plain text.
+
+<p> View more <a href="http://www.freecatphotoapp.com">cat photos</a> </p>
+
+Make Dead Links using the Hash Symbol
+Sometimes you want to add a elements to your website before you know where they will link.
+
+This is also handy when you're changing the behavior of a link using jQuery, which we'll learn about later.
+
+Replace the value of your a element's href attribute with a #, also known as a hash symbol, to turn it into a dead link.
+<p>Click here for <a href="#"<img src="https://bit.ly/fcc-running-cats"</a>.</p>
+
+Add Alt Text to an Image for Accessibility
+alt attributes, also known as alt text, are what browsers will display if they fail to load the image. alt attributes are also important for blind or visually impaired users to understand what an image portrays. And search engines also look at alt attributes.
+
+In short, every image should have an alt attribute!
+
+You can add an alt attribute right in the img element like this:
+
+<img src="www.your-image-source.com/your-image.jpg" alt="your alt text">
+
+Add an alt attribute with the text A cute orange cat lying on its back to our cat photo.
+
+<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
+
+
+Create a Bulleted Unordered List
+HTML has a special element for creating unordered lists, or bullet point-style lists.
+
+Unordered lists start with a <ul> element. Then they contain some number of <li> elements.
+
+For example:
+
+<ul>
+  <li>milk</li>
+  <li>cheese</li>
+</ul>
+would create a bullet point-style list of "milk" and "cheese".
+
+Remove the last two p elements and create an unordered list of three things that cats love at the bottom of the page.
